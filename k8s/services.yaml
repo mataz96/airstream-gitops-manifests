@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: active-service
+  labels:
+    app: petclinic
+    role: active
+spec:
+  type: LoadBalancer
+  selector:
+    app: petclinic
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: preview-service
+  labels:
+    app: petclinic
+    role: preview
+spec:
+  type: LoadBalancer
+  selector:
+    app: petclinic
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 8080
