@@ -7,4 +7,4 @@ resources:
 
 images:
 - name: 749474900204.dkr.ecr.us-east-1.amazonaws.com/airstream-petclinic
-  newTag: $IMAGE_TAG
+  newTag: v1.0.9
