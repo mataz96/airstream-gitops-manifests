@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: 749474900204.dkr.ecr.us-east-1.amazonaws.com/airstream-petclinic
+        image: 749474900204.dkr.ecr.us-east-1.amazonaws.com/airstream-airstream-app
         ports:
         - name: http
           containerPort: 8080
