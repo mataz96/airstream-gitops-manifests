@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: active-service
   labels:
-    app: petclinic
+    app: airstream
     role: active
 spec:
   type: LoadBalancer
   selector:
-    app: petclinic
+    app: airstream
   ports:
   - name: http
     port: 80
@@ -19,12 +19,12 @@ kind: Service
 metadata:
   name: preview-service
   labels:
-    app: petclinic
+    app: airstream
     role: preview
 spec:
   type: LoadBalancer
   selector:
-    app: petclinic
+    app: airstream
   ports:
   - name: http
     port: 8080

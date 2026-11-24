@@ -1,22 +1,22 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: petclinic-rollout
+  name: airstream-rollout
   labels:
-    app: petclinic
+    app: airstream
 spec:
   replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: petclinic
+      app: airstream
   template:
     metadata:
       labels:
-        app: petclinic
+        app: airstream
     spec:
       containers:
-      - name: petclinic
+      - name: airstream
         image: 749474900204.dkr.ecr.us-east-1.amazonaws.com/airstream-airstream-app
         ports:
         - name: http
