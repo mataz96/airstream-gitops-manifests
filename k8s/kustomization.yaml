@@ -6,5 +6,5 @@ resources:
 - rollout.yaml
 
 images:
-- name: 749474900204.dkr.ecr.us-east-1.amazonaws.com/airstream-petclinic
+- name: 749474900204.dkr.ecr.us-east-1.amazonaws.com/airstream-airstream-app
   newTag: v1.0.11
